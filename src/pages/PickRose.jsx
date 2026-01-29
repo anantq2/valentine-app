@@ -10,7 +10,7 @@ const PickRose = () => {
     const roses = [
         {
             color: 'red',
-            image: '/image (12).png',
+            image: '/image (13).png',
             title: 'Red Rose',
             meaning: 'Deep Love & Passion',
             gradient: 'from-rose-red-600 to-rose-red-800',
@@ -18,7 +18,7 @@ const PickRose = () => {
         },
         {
             color: 'pink',
-            image: '/image (13).png',
+            image: '/image (14).png',
             title: 'Pink Rose',
             meaning: 'Sweetness & Admiration',
             gradient: 'from-pink-400 to-pink-600',
@@ -26,7 +26,7 @@ const PickRose = () => {
         },
         {
             color: 'yellow',
-            image: '/image (14).png',
+            image: '/image (15).png',
             title: 'Yellow Rose',
             meaning: 'Friendship & Joy',
             gradient: 'from-rose-gold-400 to-rose-gold-600',
@@ -34,7 +34,7 @@ const PickRose = () => {
         },
         {
             color: 'white',
-            image: '/image (15).png',
+            image: '/image (12).png',
             title: 'White Rose',
             meaning: 'Purity & Innocence',
             gradient: 'from-gray-100 to-gray-300',
