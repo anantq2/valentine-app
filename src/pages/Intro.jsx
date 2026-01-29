@@ -82,7 +82,7 @@ const Intro = () => {
                     <div className="relative px-8 py-3 rounded-full border border-gold/50 bg-black/20 backdrop-blur-sm">
                         <p className="text-lg md:text-xl font-cormorant font-light text-rose-100 flex items-center gap-2">
                             <span>🎵</span>
-                            mote top right corner pe click kar gana bajega
+                            for a dedicated song "for you" click top right corner
                             <span>🎵</span>
                         </p>
                     </div>
@@ -109,7 +109,7 @@ const Intro = () => {
                         onClick={() => navigate('/pick-rose')}
                         className="px-12 py-6 rounded-full text-2xl md:text-3xl font-cormorant font-semibold"
                     >
-                        Anant ko marke aage dekho 😉
+                        Beautiful rose is waiting for you 🏹
                     </animated.button>
                 </motion.div>
 

@@ -70,6 +70,25 @@ const FinalBouquet = () => {
                 />
             )}
 
+            {/* Scroll indicator - top left corner */}
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5 }}
+                className="absolute top-56 md:top-32 left-4 md:left-6 z-40 flex items-center gap-2"
+            >
+                <p className="text-xs md:text-sm font-cormorant text-rose-200 italic">
+                    click on bouquet to see lovely message
+                </p>
+                <motion.span
+                    animate={{ y: [0, 5, 0] }}
+                    transition={{ repeat: Infinity, duration: 1.2, ease: "easeInOut" }}
+                    className="text-sm"
+                >
+                    👇
+                </motion.span>
+            </motion.div>
+
             {/* Floating hearts background */}
             {floatingHearts.map(heart => (
                 <motion.div
@@ -179,8 +198,13 @@ const FinalBouquet = () => {
                             style={{ transform: 'translateZ(-30px)' }}
                         />
 
-                        {/* Main bouquet image - transparent background, no borders */}
-                        <motion.div className="relative">
+                        {/* Main bouquet image - clickable to scroll */}
+                        <motion.div
+                            className="relative cursor-pointer"
+                            onClick={() => {
+                                document.getElementById('message-section')?.scrollIntoView({ behavior: 'smooth' })
+                            }}
+                        >
                             <motion.img
                                 src="/bouquet-transparent.png"
                                 alt="Beautiful bouquet for you"
@@ -196,6 +220,7 @@ const FinalBouquet = () => {
 
                 {/* Romantic Message */}
                 <motion.div
+                    id="message-section"
                     initial={{ opacity: 0, y: 100, scale: 0.8 }}
                     animate={showMessage ? { opacity: 1, y: 0, scale: 1 } : {}}
                     transition={{
