@@ -147,7 +147,7 @@ const PickRose = () => {
                     <div className="gold-divider w-48 mx-auto mb-6" />
 
                     <p className="text-2xl font-cormorant" style={{ color: '#F0F0F0' }}>
-                        chal mote ek gulab utha le....
+                        take one rose my love...
                     </p>
                 </motion.div>
 
